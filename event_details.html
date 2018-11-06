@@ -5,66 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/page_styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <base target="_blank">
     <title>Event Details</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="global-header">
-            <div class="header-wrapper">
-                <div id="website-title">
-                    Tech Event Near Me
-                </div>
-                <nav role="navigation" class="global-nav">
-                    <ul id="navigation">
-                        <li><a href="" target = "_self">Home</a></li>
-                        <li><a href="" target = "_self">About</a></li>
-                        <li><a href="" target = "_self">Support</a></li>
-                    </ul>
-                </nav>
+    <header class="global-header">
+        <div class="title-and-navi">
+            <div id="website-title">
+                <a href="index.html" target="_top">What is the next tech event in Seattle?</a>
             </div>
-        </header>
-        <main class="details-main">
-            <!--<figure class="event-photo">
-                
-            </figure>-->
+            <nav role="navigation" class="global-nav">
+                <div class="small-nav-open-icon">
+                    <i class="material-icons small-nav-open-icon">dehaze</i>
+                    Menu
+                </div>
+                <div id="navigation">
+                    <i class="material-icons small-nav-close-icon">clear</i>
+                    <ul>
+                        <li><a href = "index.html" target = "_self">Home</a></li>
+                        <li><a href = "signup_page.html" target = "_self">Sign Up</a></li>
+                        <li><a href = "login.html" target = "_self">Login</a></li>
+                        <li><a href = "submission_page.html" target = "_self">Submit Event</a></li>
+                        <li><a href = "about_page.html" target = "_self">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="details-wrapper">
+        <main class="details_main">
             <div class="event-headline">
-                <h1><!--Event Headline-->Washington Project Meeting #1</h1>
+                <h1 class="details_title">Washington Project Meeting #6</h1>
+                <i class="far fa-clock details_icons" style="margin-left: -0.1em;"></i><!--Date-->April 4, 2018,<!--Time--> 6:00 PM – 8:00 PM<br>
+                <i class="fas fa-map-marker details_icons"></i><span id="event_address">1521 10th Avenue, Seattle</span>
+            </div>
+
+            <div class="event-link">
+                <i class="fas fa-info details_icons" style="margin-left: 0.2em;"></i></i><a href="https://www.facebook.com/events/2022931674638015/">Grow w/ Google x Udacity - Washington State</a>
             </div>
             <article class="event-description">
-                <p>Lets meet and go over the Washington Group Project details. <br>For those of you who cannot attend at this location, I will have video feed available on Google Hangouts so you can join the conversation. Link here: 
+                <p>Lets meet and go over the Washington Group Project details. <br>For those of you who cannot attend at this location, I will have video feed available on Google Hangouts so you can join the conversation. Link here:
                 <a href="https://hangouts.google.com/group/EcKwOcNSPDOuI2T22">https://hangouts.google.com/group/EcKwOcNSPDOuI2T22</a></p>
-                
-                <p>Also, I made a Google Drive publicly available so we can all add and update content in a central location (we will use GitHub for the actual code and project assets). In this drive you will find an early version of an agenda for our first meeting. <br>Feel free to add some items or notes. 
-                Link to Google Drive: <a href="https://drive.google.com/drive/folders/1cq_knSmqbPCCkO39bBVs04ULyGFpYITh?usp=sharing">https://drive.google.com/drive/folders/1cq_knSmqbPCCkO39bBVs04ULyGFpYITh?usp=sharing</a></p>
-                
-                <p>I am hoping this project can be as inclusive as possible and that everyone can have a chance to work on the project no matter their time constraints.</p>
+                <p>Also, I made a Google Drive publicly available so we can all add and update content in a central location (we will use GitHub for the actual code and project assets). <br>
+                Link to Google Drive: <a href="httpskO39bBVs04ULyGFpYITh?usp=sharing">https://drive.google.com/drive/folders/1cq_knSmqbPCCkO39bBVs04ULyGFpYITh?usp=sharing</a></p>
             </article>
         </main>
         <aside class="details-aside">
-            <div class="event-date">
-                <h2>When:</h2>
-                <!--Date-->March 4 2018
-                <!--Time-->2:00 PM – 5:00 PM
-            </div>
-            <div class="event-location">
-                <h2>Where:</h2>
-                <!--Address-->500 Westlake Ave N, Seattle, WA 98109-4303, United States
-                <div class="map">
-                    <!--Map-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.1395948886043!2d-122.34028318436891!3d47.623417679185785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901539d13c246b%3A0xbe84c5d3de10b089!2s500+Westlake+Ave+N%2C+Seattle%2C+WA+98109!5e0!3m2!1sja!2sus!4v1520748670542" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="event-contacts">
-                <h2>Contact(s):</h2>
-                <!--Organiser--><a href="https://www.facebook.com/events/2022931674638015/">Grow w/ Google x Udacity - Washington State</a>
-            </div>
+            <div id="map"></div>
         </aside>
-        <footer>
-            <div class="copywrite">
-                &copy; 2018<script>new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> Udacity GwG Washington State Team
-            </div>   
-        </footer>
-    </div> <!--End wrapper-->
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6_XL2pAxYu7YeCW943eSeQOQqU0LsIIQ&callback=initMap" async defer></script>
+<script src="./javascripts/details.js"></script>
 </body>
 </html>
